@@ -1,0 +1,12 @@
+/health:
+get:
+description: "This is health description"
+responses:
+200:
+body:
+application/json:
+example:
+{
+time : "08:35 AM",
+heath : "Okay"
+}
