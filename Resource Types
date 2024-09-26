@@ -1,0 +1,19 @@
+##define ResourceType, to use multiple places
+resourceTypes:
+healthcheck:
+get:
+description: This is <<resourcePathName | !uppercase>>
+responses:
+200:
+body:
+application/json:
+example:
+{
+time : "08:35PM",
+health : "Okay"
+}
+
+##Resource defined with resourcetype
+/health:
+type:
+healthcheck
