@@ -1,0 +1,28 @@
+traits:
+typesOfVerification:
+queryParameters:
+username: string
+password: string
+
+/createAccount:
+description: "To create a new account"
+post:
+queryParameters:
+branch : string
+is:
+- {typeOfVerification : {typeOfOtp : "Mobile OTP" }}
+body:
+application/json:
+example:
+{
+Name : "Shubh",
+DOB : "23-Jan-1988"
+}
+responses:
+201:
+body:
+application/json:
+example:
+{
+message : "Account Created"
+}
